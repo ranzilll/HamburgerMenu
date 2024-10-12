@@ -360,11 +360,6 @@
     border: none;
 }
 
-.sidesearchbox:focus-within {
-    /* box-shadow: 0 0 5px 2px rgba(128, 128, 128, 0.5); */
-    /* Adds a gray box shadow when input or icon is focused */
-}
-
 .sidesearchbox2 input::placeholder {
     color: #5d2b66;
     font-weight: 600;

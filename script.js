@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // hamburger and cross logic 
-
+document.addEventListener('click', showSidebar);
 function showSidebar(){
     const sidebar = document.querySelector('.sideCclass');
     console.log(sidebar);
@@ -348,6 +348,7 @@ function showSidebar(){
     cross.style.display = 'block';
 }
 
+document.addEventListener('click', hideSidebar);
 function hideSidebar(){
     const cross = document.querySelector('.cross');
     cross.style.display = 'none';
@@ -363,6 +364,7 @@ function hideSidebar(){
 // end of hamburger and cross logic 
 
 // insurance logic 
+document.addEventListener('click', showsubmenu);
 function showsubmenu(){
     const subm = document.querySelector('.sideinssumenu');
     subm.style.display = 'block'
@@ -374,6 +376,7 @@ function showsubmenu(){
     up.style.display = 'block';
 }
 
+document.addEventListener('click', hideubmenu);
 function hideubmenu(){
     const up = document.querySelector('.sideinsdropdup');
     up.style.display = 'none';
@@ -385,6 +388,7 @@ function hideubmenu(){
     subm.style.display = 'none';
 }
 
+document.addEventListener('click', showlifeins);
 function showlifeins(){
     const showlifeins = document.querySelector('.lifeinscontent');
     showlifeins.style.display = 'block';
@@ -396,6 +400,7 @@ function showlifeins(){
     hideins.style.display = 'block';
 }
 
+document.addEventListener('click', hideins);
 function hideins(){
     const showlifeins = document.querySelector('.lifeinscontent');
     showlifeins.style.display = 'none';
@@ -406,7 +411,7 @@ function hideins(){
     const hideins = document.querySelector('.sideinsdropdup1b');
     hideins.style.display = 'none';
 }
-
+document.addEventListener('click', showillandinc);
 function showillandinc(){
     const showlifeins = document.querySelector('.illincscontent');
     showlifeins.style.display = 'block';
@@ -417,7 +422,7 @@ function showillandinc(){
     const hideins = document.querySelector('.sideilldropup');
     hideins.style.display = 'block';
 }
-
+document.addEventListener('click', hideillandinc);
 function hideillandinc(){
     const showlifeins = document.querySelector('.illincscontent');
     showlifeins.style.display = 'none';
@@ -428,7 +433,7 @@ function hideillandinc(){
     const hideins = document.querySelector('.sideilldropup');
     hideins.style.display = 'none';
 }
-
+document.addEventListener('click', showinscust);
 function showinscust(){
     const showlifeins = document.querySelector('.inscust');
     showlifeins.style.display = 'block';
@@ -439,7 +444,7 @@ function showinscust(){
     const hideins = document.querySelector('.sidecstdropup');
     hideins.style.display = 'block';
 }
-
+document.addEventListener('click', hideinscust);
 function hideinscust(){
     const showlifeins = document.querySelector('.inscust');
     showlifeins.style.display = 'none';
@@ -455,6 +460,7 @@ function hideinscust(){
 
 // pension logic 
 
+document.addEventListener('click', showsubmenu2);
 function showsubmenu2(){
     const showlifeins = document.querySelector('.sidepenmenu');
     showlifeins.style.display = 'block';
@@ -466,6 +472,7 @@ function showsubmenu2(){
     hideins.style.display = 'block';
 }
 
+document.addEventListener('click', hideubmenu2);
 function hideubmenu2(){
     const showlifeins = document.querySelector('.sidepenmenu');
     showlifeins.style.display = 'none';
@@ -477,6 +484,7 @@ function hideubmenu2(){
     hideins.style.display = 'none';
 }
 
+document.addEventListener('click', showourpens);
 function showourpens(){
     const showlifeins = document.querySelector('.pens');
     showlifeins.style.display = 'block';
@@ -488,6 +496,7 @@ function showourpens(){
     hideins.style.display = 'block';
 }
 
+document.addEventListener('click', hideourpens);
 function hideourpens(){
     const showlifeins = document.querySelector('.pens');
     showlifeins.style.display = 'none';
@@ -498,7 +507,7 @@ function hideourpens(){
     const hideins = document.querySelector('.sidepensup');
     hideins.style.display = 'none';
 }
-
+document.addEventListener('click', showourinv);
 function showourinv(){
     const showlifeins = document.querySelector('.inv');
     showlifeins.style.display = 'block';
@@ -510,6 +519,7 @@ function showourinv(){
     hideins.style.display = 'block';
 }
 
+document.addEventListener('click', hideourinv);
 function hideourinv(){
     const showlifeins = document.querySelector('.inv');
     showlifeins.style.display = 'none';
@@ -525,6 +535,7 @@ function hideourinv(){
 
 // retirement planning logic 
 
+document.addEventListener('click', showsubmenu3);
 function showsubmenu3(){
     const showlifeins = document.querySelector('.sideretmenu');
     showlifeins.style.display = 'block';
@@ -536,6 +547,7 @@ function showsubmenu3(){
     hideins.style.display = 'block';
 }
 
+document.addEventListener('click', hideubmenu3);
 function hideubmenu3(){
     const showlifeins = document.querySelector('.sideretmenu');
     showlifeins.style.display = 'none';
@@ -547,6 +559,7 @@ function hideubmenu3(){
     hideins.style.display = 'none';
 }
 
+document.addEventListener('click', showyourpens);
 function showyourpens(){
     const showlifeins = document.querySelector('.uyp');
     showlifeins.style.display = 'block';
@@ -558,6 +571,7 @@ function showyourpens(){
     hideins.style.display = 'block';
 }
 
+document.addEventListener('click', hideyourpens);
 function hideyourpens(){
     const showlifeins = document.querySelector('.uyp');
     showlifeins.style.display = 'none';
@@ -569,6 +583,7 @@ function hideyourpens(){
     hideins.style.display = 'none';
 }
 
+document.addEventListener('click', showretols);
 function showretols(){
     const showlifeins = document.querySelector('.rt');
     showlifeins.style.display = 'block';
@@ -580,6 +595,7 @@ function showretols(){
     hideins.style.display = 'block';
 }
 
+document.addEventListener('click', hideretols);
 function hideretols(){
     const showlifeins = document.querySelector('.rt');
     showlifeins.style.display = 'none';
