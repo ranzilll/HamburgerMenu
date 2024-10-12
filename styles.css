@@ -566,7 +566,7 @@
         font-size: 20px;
     }
 
-    .sideinsurance,.pensions,.retplan{
+    .sideinsurance,.sidepensions,.retplan{
         margin-left: 20px;
         width: 80%;
         display: flex;
