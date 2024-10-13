@@ -1,268 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>HamburgerMenu</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- side bar  -->
 
     <div class="sideA1">
-
-        <div class="sideBclass">
-            <div class="sideB1">
-                <img src="middleheadelogo2.svg" alt="">
-            </div>
-            <div class="sideB2">
-                <div class="sidemenu">MENU</div>
-                <div class="hamburger" ><i class="fa-solid fa-bars"></i></div>
-                <div class="cross"><i class="fa-solid fa-x"></i></div>
-            </div>
+      <div class="sideBclass">
+        <div class="sideB1">
+          <img src="middleheadelogo2.svg" alt="" />
         </div>
-
-        <div class="sideCclass">
-            <div class="sideC1">
-                <div class="sidesearchbox2 ">
-                    <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="sidelogin">
-                    <button>Customer Login</button>
-                </div>
-
-                    <!-- isurance sub menu  -->
-
-                    <div class="sideinsurance">
-                        <div class="sideinshead">Insurance</div>
-                        <div class="careticon">
-                            <div class="sideinsdropdwn sde" onclick="showsubmenu()"><i class="fa-solid fa-caret-down"></i>
-                            </div>
-                            <div class="sideinsdropdup sde2" onclick="hideubmenu()"><i class="fa-solid fa-caret-up"></i>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="sideinssumenu">
-
-                        <div class="sidelifeinsurance">
-                            <div class="sidelifeins">Life Insurance</div>
-                            <div class="careticon">
-                                <div class="sideinsdropdwn1a sde" onclick="showlifeins()"><i
-                                        class="fa-solid fa-caret-down"></i></div>
-                                <div class="sideinsdropdup1b sde2" onclick="hideins()"><i 
-                                    class="fa-solid fa-caret-up"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lifeinscontent submencontent">
-                            <li>All Life insurance Products</li>
-                            <li>Advised Life Cover</li>
-                            <li>Direct Life Cover</li>
-                            <li>Diabetes Life Cover</li>
-                            <li>Whole of Life</li>
-                        </div>
-
-
-                        <div class="sideillndinc">
-                            <div class="sideill">Illness and Income Protection</div>
-                            <div class="careticon">
-                                <div class="sideilldropdown sde" onclick="showillandinc()"><i
-                                        class="fa-solid fa-caret-down"></i></div>
-                                <div class="sideilldropup sde2" onclick="hideillandinc()"><i
-                                        class="fa-solid fa-caret-up"></i></div>
-                            </div>
-                        </div>
-                        <div class="illincscontent submencontent">
-                            <li>All Illness and Income Protection</li>
-                            <li>Critical Illness Cover</li>
-                            <li>Life or Critical illness Cover</li>
-                            <li>Income Protection</li>
-                        </div>
-
-                        <div class="sideillndinc">
-                            <div class="sideill">Insurance Customers</div>
-                            <div class="careticon">
-                                <div class="sidecstdropdown sde" onclick="showinscust()"><i
-                                        class="fa-solid fa-caret-down"></i></div>
-                                <div class="sidecstdropup sde2" onclick="hideinscust()"><i
-                                        class="fa-solid fa-caret-up"></i></div>
-                            </div>
-                        </div>
-                        <div class="inscust submencontent">
-                            <li>Make a Claim</li>
-                            <li>Manage your insurance policy</li>
-                        </div>
-                    </div>
-
-                <!--end of insurance sub menu  -->
-
-                <!-- pension sub menu  -->
-
-                <div class="sidepensions">
-                    <div class="sideinshead">Pensions</div>
-                    <div class="careticon">
-                        <div class="sidependropdwn sde" onclick="showsubmenu2()"><i class="fa-solid fa-caret-down"></i>
-                        </div>
-                        <div class="sidependropdup sde2" onclick="hideubmenu2()"><i class="fa-solid fa-caret-up"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sidepenmenu">
-
-                    <div class="sidepens">
-                        <div class="sideinshead">Our Pensions</div>
-                        <div class="careticon">
-                            <div class="sideourpensdwn sde" onclick="showourpens()"><i
-                                    class="fa-solid fa-caret-down"></i></div>
-                            <div class="sidepensup sde2" onclick="hideourpens()"><i 
-                                class="fa-solid fa-caret-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pens submencontent">
-                        <li>Personal Pensions </li>
-                        <li>Workplace pensions</li>
-                        <li>Profit share</li>
-                        <li>Pensions traders</li>
-                    </div>
-
-                    <div class="sideinv">
-                        <div class="sideinshead">Investments</div>
-                        <div class="careticon">
-                            <div class="sideinvdown sde" onclick="showourinv()"><i
-                                    class="fa-solid fa-caret-down"></i></div>
-                            <div class="sideinvup sde2" onclick="hideourinv()"><i 
-                                class="fa-solid fa-caret-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inv submencontent">
-                        <li>Investment Options</li>
-                        <li>Fund Prices and Factsheets</li>
-                        <li>Responsible Investments</li>
-                        <li>Pensions traders</li>
-                    </div>
-                   
-                </div>
-
-                <!-- end of pension sub menu  -->
-
-                <!-- retirement planning submenu  -->
-                <div class="retplan">
-                    <div class="sideinshead">Retirement Planning</div>
-                    <div class="careticon">
-                        <div class="sideretdwn sde" onclick="showsubmenu3()"><i class="fa-solid fa-caret-down"></i>
-                        </div>
-                        <div class="sideretup sde2" onclick="hideubmenu3()"><i class="fa-solid fa-caret-up"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sideretmenu">
-
-                    <div class="sideret">
-                        <div class="sideinshead">Using your pensions</div>
-                        <div class="careticon">
-                            <div class="sideret1dwn sde" onclick="showyourpens()"><i
-                                    class="fa-solid fa-caret-down"></i></div>
-                            <div class="sideret1up sde2" onclick="hideyourpens()"><i 
-                                class="fa-solid fa-caret-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uyp submencontent">
-                        <li>Pension Drawdown</li>
-                        <li>Take a cash Lump sum</li>
-                        <li>Buy an Annuity</li>
-                        <li>Pensions traders</li>
-                    </div>
-
-                    <div class="sideretols">
-                        <div class="sideinshead">Retirement Tools</div>
-                        <div class="careticon">
-                            <div class="sideretoldwn sde" onclick="showretols()"><i
-                                    class="fa-solid fa-caret-down"></i></div>
-                            <div class="sideretolup sde2" onclick="hideretols()"><i 
-                                class="fa-solid fa-caret-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rt submencontent">
-                        <li>Retirement Income and lifestyle partner</li>
-                        <li>Retirement Lumpsum Calculator</li>
-                        <li>Responsible Investments</li>
-                    </div>
-                   
-                </div>
-
-
-                <!-- end of retirement planning submenu  -->
-
-            </div>
+        <div class="sideB2">
+          <div class="sidemenu">MENU</div>
+          <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+          <div class="cross"><i class="fa-solid fa-x"></i></div>
         </div>
-    </div>
+      </div>
 
+      <div class="sideCclass">
+        <div class="sideC1">
+          <div class="sidesearchbox2">
+            <input type="text" placeholder="Search..." /><i
+              class="fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
+          <div class="sidelogin">
+            <button>Customer Login</button>
+          </div>
+
+          <!-- isurance sub menu  -->
+
+          <div class="sideinsurance">
+            <div class="sideinshead">Insurance</div>
+            <div class="careticon">
+              <div class="sideinsdropdwn sde" onclick="showsubmenu()">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <div class="sideinsdropdup sde2" onclick="hideubmenu()">
+                <i class="fa-solid fa-caret-up"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="sideinssumenu">
+            <div class="sidelifeinsurance">
+              <div class="sidelifeins">Life Insurance</div>
+              <div class="careticon">
+                <div class="sideinsdropdwn1a sde" onclick="showlifeins()">
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="sideinsdropdup1b sde2" onclick="hideins()">
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="lifeinscontent submencontent">
+              <li>All Life insurance Products</li>
+              <li>Advised Life Cover</li>
+              <li>Direct Life Cover</li>
+              <li>Diabetes Life Cover</li>
+              <li>Whole of Life</li>
+            </div>
+
+            <div class="sideillndinc">
+              <div class="sideill">Illness and Income Protection</div>
+              <div class="careticon">
+                <div class="sideilldropdown sde" onclick="showillandinc()">
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="sideilldropup sde2" onclick="hideillandinc()">
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="illincscontent submencontent">
+              <li>All Illness and Income Protection</li>
+              <li>Critical Illness Cover</li>
+              <li>Life or Critical illness Cover</li>
+              <li>Income Protection</li>
+            </div>
+
+            <div class="sideillndinc">
+              <div class="sideill">Insurance Customers</div>
+              <div class="careticon">
+                <div class="sidecstdropdown sde" onclick="showinscust()">
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="sidecstdropup sde2" onclick="hideinscust()">
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="inscust submencontent">
+              <li>Make a Claim</li>
+              <li>Manage your insurance policy</li>
+            </div>
+          </div>
+
+          <!--end of insurance sub menu  -->
+
+          <!-- pension sub menu  -->
+
+          <div class="sidepensions">
+            <div class="sideinshead">Pensions</div>
+            <div class="careticon">
+              <div class="sidependropdwn sde" onclick="showsubmenu2()">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <div class="sidependropdup sde2" onclick="hideubmenu2()">
+                <i class="fa-solid fa-caret-up"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidepenmenu">
+            <div class="sidepens">
+              <div class="sideinshead">Our Pensions</div>
+              <div class="careticon">
+                <div class="sideourpensdwn sde" onclick="showourpens()">
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="sidepensup sde2" onclick="hideourpens()">
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pens submencontent">
+              <li>Personal Pensions</li>
+              <li>Workplace pensions</li>
+              <li>Profit share</li>
+              <li>Pensions traders</li>
+            </div>
+
+            <div class="sideinv">
+              <div class="sideinshead">Investments</div>
+              <div class="careticon">
+                <div class="sideinvdown sde" onclick="showourinv()">
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="sideinvup sde2" onclick="hideourinv()">
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="inv submencontent">
+              <li>Investment Options</li>
+              <li>Fund Prices and Factsheets</li>
+              <li>Responsible Investments</li>
+              <li>Pensions traders</li>
+            </div>
+          </div>
+
+          <!-- end of pension sub menu  -->
+
+          <!-- retirement planning submenu  -->
+          <div class="retplan">
+            <div class="sideinshead">Retirement Planning</div>
+            <div class="careticon">
+              <div class="sideretdwn sde" onclick="showsubmenu3()">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <div class="sideretup sde2" onclick="hideubmenu3()">
+                <i class="fa-solid fa-caret-up"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="sideretmenu">
+            <div class="sideret">
+              <div class="sideinshead">Using your pensions</div>
+              <div class="careticon">
+                <div class="sideret1dwn sde" onclick="showyourpens()">
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="sideret1up sde2" onclick="hideyourpens()">
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="uyp submencontent">
+              <li>Pension Drawdown</li>
+              <li>Take a cash Lump sum</li>
+              <li>Buy an Annuity</li>
+              <li>Pensions traders</li>
+            </div>
+
+            <div class="sideretols">
+              <div class="sideinshead">Retirement Tools</div>
+              <div class="careticon">
+                <div class="sideretoldwn sde" onclick="showretols()">
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="sideretolup sde2" onclick="hideretols()">
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="rt submencontent">
+              <li>Retirement Income and lifestyle partner</li>
+              <li>Retirement Lumpsum Calculator</li>
+              <li>Responsible Investments</li>
+            </div>
+          </div>
+
+          <!-- end of retirement planning submenu  -->
+        </div>
+      </div>
     </div>
 
     <!-- end of side bar  -->
     <!-- top header  -->
     <div class="topheader">
-        <div class="types">
-            <div class="adviser">Adviser</div>
-            <div class="assetmgr">Asset Manager</div>
-            <div class="employer">Employer</div>
-        </div>
-        <div class="searchbox">
-            <input type="text" placeholder="Search Royal London..."><i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="login">
-            <button>Customer Login</button>
-        </div>
+      <div class="types">
+        <div class="adviser">Adviser</div>
+        <div class="assetmgr">Asset Manager</div>
+        <div class="employer">Employer</div>
+      </div>
+      <div class="searchbox">
+        <input type="text" placeholder="Search Royal London..." /><i
+          class="fa-solid fa-magnifying-glass"
+        ></i>
+      </div>
+      <div class="login">
+        <button>Customer Login</button>
+      </div>
     </div>
     <!-- end of top header  -->
 
     <!-- middle header  -->
     <div class="middleheader">
-        <div class="logo">
-            <img src="logo.JPG" alt="">
+      <div class="logo">
+        <img src="logo.JPG" alt="" />
+      </div>
+      <div class="options">
+        <div class="opt1 opt">
+          <div class="insurance">Insurance</div>
         </div>
-        <div class="options">
-            <div class="opt1 opt">
-                <div class="insurance">Insurance</div>
-            </div>
-            <div class="opt2 opt">
-                <div class="pensions">Pensions</div>
-            </div>
-            <div class="opt3 opt">
-                <div class="retirement">Retirement Planning</div>
-            </div>
-            <div class="opt4 opt">
-                <div class="Guides">Guides and tools</div>
-            </div>
-            <div class="opt5 opt">
-                <div class="Customersupp">Customer Support</div>
-            </div>
-            <div class="opt6 opt">
-                <div class="About">About us</div>
-            </div>
+        <div class="opt2 opt">
+          <div class="pensions">Pensions</div>
         </div>
+        <div class="opt3 opt">
+          <div class="retirement">Retirement Planning</div>
+        </div>
+        <div class="opt4 opt">
+          <div class="Guides">Guides and tools</div>
+        </div>
+        <div class="opt5 opt">
+          <div class="Customersupp">Customer Support</div>
+        </div>
+        <div class="opt6 opt">
+          <div class="About">About us</div>
+        </div>
+      </div>
     </div>
 
     <!-- Placeholder for submenus -->
-    <div id="submenu-container" class="submenu-container "></div>
+    <div id="submenu-container" class="submenu-container"></div>
     <div id="submenu-container2" class="submenu-container2"></div>
     <div id="submenu-container3" class="submenu-container3"></div>
     <div id="submenu-container4" class="submenu-container4"></div>
@@ -273,15 +284,13 @@
 
     <!-- bottom header  -->
     <div class="bottomheader">
-        <div class="existingcust">
-            <i class="fa-solid fa-house"></i>
-            <i class="fa-solid fa-arrow-right"></i>
-            <p>Existing Customers</p>
-            <i class="fa-solid fa-arrow-right"></i>
-        </div>
-        <div class="contactexcust">
-            Contact Us
-        </div>
+      <div class="existingcust">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-arrow-right"></i>
+        <p>Existing Customers</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="contactexcust">Contact Us</div>
     </div>
 
     <!-- end of bottom header  -->
@@ -289,64 +298,21 @@
     <!--main img  -->
 
     <div class="mainimg">
-        <div class="img">
-            <img src="mainimgA.jpg" alt="">
-        </div>
-        <div class="img2">
-            <img src="mainimg.jpg" alt="">
-        </div>
-        <div class="content">
-            <h1>Contact Us</h1>
-            <h2>If you need to get in touch with our customer service team about your pension plan, insurance policy or
-                investment product, we're here to help.</h2>
-        </div>
+      <div class="img">
+        <img src="mainimgA.jpg" alt="" />
+      </div>
+      <div class="img2">
+        <img src="mainimg.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h1>Contact Us</h1>
+        <h2>
+          If you need to get in touch with our customer service team about your
+          pension plan, insurance policy or investment product, we're here to
+          help.
+        </h2>
+      </div>
     </div>
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
-
-
-
-<!-- <div class="submenu">
-
-            <div class="submenuA">
-                <div class="lifeins abc">Life Insurance</div>
-                <div class="sublifeins xyz">
-                    <li>All Life Insurance Products</li>
-                    <li>Advised Life Cover</li>
-                    <li>Direct Life Insurance</li>
-                    <li>Diabetes Life Cover</li>
-                    <li>Whole of Life</li>
-                </div>
-            </div>
-
-            <div class="submenuB">
-                <div class="Illness abc">Illness and Income Protection.</div>
-                <div class="subillness xyz">
-                    <li>Critical Illness Cover</li>
-                    <li>Life or critical Illness cover</li>
-                    <li>Income Protetction</li>
-                    <li>Fund Range</li>
-                </div>
-            </div>
-
-            <div class="submenuC">
-                <div class="InsCust abc">Insurance Customers.</div>
-                <div class="subinstCust xyz">
-                    <li>Make a Claim</li>
-                    <li>Manage your insurance policy</li>
-                </div>
-            </div>
-
-           <div class="submenuD">
-                <div class="InsGd abc">Insurance Customers.</div>
-                <div class="subinsgd xyz">
-                    <li>What is life insurance?</li>
-                    <li>Type of life insurance</li>
-                    <li>Insurance guides</li>
-                </div>
-            </div>
-           
-    </div>  -->
